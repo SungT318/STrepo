@@ -18,14 +18,14 @@
             justify-content: center;
             align-items: center;
         }
-        #duhee {
+        #sungt {
             width:150px;
             height:150px;
             object-fit:cover;
             border-radius:50%;
             margin-right: 30px;
         }
-        #jisook {
+        #glee {
             width:150px;
             height:150px;
             object-fit:cover;
@@ -58,21 +58,21 @@
 </head>
 <body class="container">
     <section class='photos'>
-        <img id='duhee' src="duhee.jpeg" alt="duhee">
+        <img id='sungt' src="sungt.jpg" alt="sungt">
         <img id='heart' src="heart.png" alt="heart">
-        <img id='jisook' src="jisook.jpeg" alt="jisook">
+        <img id='glee' src="glee.jpg" alt="glee">
     </section>
     <div class='container d-flex flex-column justify-content-center align-items-center mt-3'>
-        <h3>성태♥지숙</h3>
+        <h3>성태♥지윤</h3>
         <h3 id='love'>0일째</h3>
         <h4 class="date">2019.10.09</h4>
     </div>
     <hr/>
     <section class='special-day'>
-        <h3 class='title'>발렌타인 데이</h3>
+        <h3 class='title'>4주년</h3>
         <div class='date-box'>
             <p id='valentine' class='days-left'>0일 남음</p>
-            <p class='date'>2024.2.14</p>
+            <p class='date'>2024.10.09</p>
         </div>
     </section>
     <hr/>
@@ -98,7 +98,7 @@
         $('#love').text(day + '일째');
 
         //기념일까지 남은 날짜는?
-        var valentine = new Date('2023-02-14');
+        var valentine = new Date('2024-10-09');
         var timeDiff2 = valentine.getTime() - now.getTime();
         var day2 = Math.floor(timeDiff2 / (1000 * 60 * 60 * 24) + 1);
         $('#valentine').text(day2 + '일 남음');
